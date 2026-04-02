@@ -7,6 +7,261 @@
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="StyleZ.css" />
 </head>
+<style>
+﻿/* الألوان والهوية البصرية */
+:root {
+    --main-red: #8b0000; /* الأحمر الغامق (أكل الزعيم) */
+    --main-blue: #004aad; /* الأزرق (من الصورة) */
+    --main-orange: #f39200; /* البرتقالي (من الصورة) */
+    --bg-light: #f9f9f9; /* خلفية فاتحة للبطاقات */
+    --card-bg: #FFFFFF; /* خلفية البطاقة بيضاء */
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: var(--bg-light);
+    margin: 0;
+    color: #333;
+    padding-bottom: 80px; /* مسافة للزر العائم */
+}
+
+/* تنسيق الهيدر */
+header {
+    background-color: var(--main-red);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 8px solid var(--main-orange);
+    position: relative;
+    background-image: linear-gradient(rgba(139, 0, 0, 0.8), rgba(139, 0, 0, 0.9)), url('header-bg.jpg'); /* اختياري: صورة خلفية للهيدر */
+    background-size: cover;
+}
+
+    header h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+.subtitle {
+    font-size: 1.2em;
+    color: var(--main-orange);
+    margin: 5px 0 20px;
+    font-weight: bold;
+}
+
+.contact-box {
+    background: white;
+    color: var(--main-red);
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* تنسيق عناوين الأقسام */
+.section-title {
+    text-align: center;
+    background: var(--main-blue);
+    color: white;
+    padding: 15px;
+    margin: 40px 0 25px;
+    font-size: 1.8em;
+    border-radius: 5px;
+}
+
+/* تنسيق شبكة القائمة (Grid) */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+}
+
+/* تنسيق بطاقة الوجبة */
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden; /* لقص الصورة عند الزوايا */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border-right: 6px solid var(--main-orange);
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    /* تنسيق تمييز قسم الكبدة */
+    .card.highlight {
+        border-right-color: var(--main-blue);
+    }
+
+/* تنسيق الصورة داخل البطاقة */
+.card-img {
+    width: 100%;
+    height: 200px; /* ارتفاع ثابت للصور */
+    object-fit: cover; /* لقص الصورة بشكل متناسق دون تمدد */
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.card h3 {
+    margin: 0;
+    color: var(--main-blue);
+    font-size: 1.4em;
+}
+
+.desc {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0 20px;
+    height: 40px;
+}
+/* ارتفاع ثابت للوصف */
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: var(--main-red);
+}
+
+.price {
+    font-size: 1.3em;
+}
+
+.cal {
+    color: #888;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+/* تنسيق القائمة الطويلة (الأصناف الشعبية) */
+.list-container {
+    background: var(--card-bg);
+    margin: 0 20px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px dashed #eee;
+}
+
+    .list-item:last-child {
+        border: none;
+    }
+
+/* تنسيق الأيقونات بجانب الأصناف */
+.list-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.source-text {
+    text-align: center;
+    font-weight: bold;
+    color: var(--main-orange);
+    margin: 50px 0;
+    font-size: 1.4em;
+}
+
+/* تنسيق الفوتر والزر العائم */
+/* تنسيق منطقة الأزرار في الفوتر */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+    z-index: 1000;
+    text-align: center;
+}
+
+.footer-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+.action-btn {
+    flex: 1;
+    max-width: 200px;
+    text-decoration: none;
+    padding: 12px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+    .action-btn:active {
+        transform: scale(0.95);
+    }
+
+/* لون زر الواتساب */
+.wa-btn {
+    background-color: #25d366;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+}
+
+/* لون زر الخريطة */
+.map-btn {
+    background-color: #4285F4;
+    box-shadow: 0 4px 10px rgba(66, 133, 244, 0.3);
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 0.85em;
+    color: #555;
+    font-weight: bold;
+}
+
+/* تعديل مسافة أسفل الصفحة لكي لا يغطي الفوتر المحتوى */
+main {
+    padding-bottom: 150px;
+}
+
+.wa-btn {
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.2em;
+    box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+}
+
+.copyright {
+    color: #888;
+    font-size: 0.8em;
+    margin-top: 15px;
+}
+
+
+
+</style>
 <body>
     <header>
         <div class="overlay">
