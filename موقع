@@ -1,0 +1,162 @@
+﻿<!<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>مطعم أكل الزعيم │ القائمة الكاملة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="StyleZ.css" />
+</head>
+<body>
+    <header>
+        <div class="overlay">
+            <div class="header-content">
+                <h1>مطعم أكل الزعيم</h1>
+                <p class="subtitle">LEADER FOOD RESTAURANT</p>
+                <div class="contact-box">
+                    <span>للاستفسار: 0546576377 - 0562492436</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">الوجبات الرئيسية</h2>
+        <div class="menu-grid">
+            <div class="card">
+                <img src="(1.1).jpg" alt="ربع فراخ مع الرز" class="card-img" />
+                <div class="card-info">
+                    <h3>ربع فراخ مع الرز</h3>
+                    <p class="desc">مع الخضار والشوربة ولسان عصفور ومخلل وخبز</p>
+                    <div class="card-footer">
+                        <span class="price">15 ريال</span>
+                        <span class="cal">1239 cal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="2.jpg" alt="لحم بلدي مع الرز" class="card-img" />
+                <div class="card-info">
+                    <h3>لحم بلدي مع الرز</h3>
+                    <p class="desc">مع الخضار والشوربة ولسان عصفور ومخلل وخبز</p>
+                    <div class="card-footer">
+                        <span class="price">30 ريال</span>
+                        <span class="cal">1239 cal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="3.jpg" alt="لحم راس مع الرز" class="card-img" />
+                <div class="card-info">
+                    <h3>لحم راس مع الرز</h3>
+                    <p class="desc">مع الخضار والشوربة ولسان عصفور ومخلل وخبز</p>
+                    <div class="card-footer">
+                        <span class="price">20 ريال</span>
+                        <span class="cal">1239 cal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">الكبدة والكشري</h2>
+        <div class="menu-grid">
+            <div class="card highlight">
+                <img src="4.jpg" alt="طبق كبدة" class="card-img" />
+                <div class="card-info">
+                    <h3>كبدة (كبير/صغير)</h3>
+                    <p class="desc">كبدة طازجة يومياً</p>
+                    <div class="card-footer">
+                        <span class="price">10 / 5 ريال</span>
+                        <span class="cal">485 cal (الكبير)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card highlight">
+                <img src="5.jpg" alt="طبق كشري" class="card-img" />
+                <div class="card-info">
+                    <h3>كشري (كبير/صغير)</h3>
+                    <p class="desc">الأكلة المصرية الشهيرة</p>
+                    <div class="card-footer">
+                        <span class="price">10 / 5 ريال</span>
+                        <span class="cal">479 cal (الكبير)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card highlight">
+                <img src="6.jpg" alt="كشري مع الكبدة" class="card-img" />
+                <div class="card-info">
+                    <h3>كشري مع الكبدة</h3>
+                    <p class="desc">مزيج رائع من الكشري والكبدة</p>
+                    <div class="card-footer">
+                        <span class="price">15 ريال</span>
+                        <span class="cal">497 cal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">الأصناف الشعبية والمقبلات</h2>
+        <div class="list-container">
+            <div class="list-item">
+                <span><img src="16.jpg" alt="فلافل مصري" class="list-icon">فلافل مصري (طعمية)</span>
+                <span>4 ريال</span>
+            </div>
+            <div class="list-item">
+                <span><img src="7.jpg" alt="فول" class="list-icon">فول علبة عادي / صلصة</span>
+                <span>2 / 3 ريال</span>
+            </div>
+            <div class="list-item">
+                <span><img src="8.jpg" alt="ساندوتش" class="list-icon">ساندوتش مشكل</span>
+                <span>2 - 5 ريال</span>
+            </div>
+            <div class="list-item">
+                <span><img src="9.jpg" alt="مسقعة" class="list-icon">علبة مسقعة / بطاطس مهروسة</span>
+                <span>3 - 5 ريال</span>
+            </div>
+            <div class="list-item">
+                <span><img src="10.jpg" alt="شكشوكة" class="list-icon">شكشوكة علبة</span>
+                <span>3 - 5 ريال</span>
+            </div>
+            <div class="list-item">
+                <span><img src="11.jpg" alt="بطاطس" class="list-icon">بطاطس صوابع / بانية</span>
+                <span>2 - 5 ريال</span>
+            </div>
+            <div class="list-item">
+                <span><img src="15.jpg" alt="باذنجان" class="list-icon">باذنجان مقلي / عادي</span>
+                <span>2 - 5 ريال</span>
+            </div>
+            <div class="list-item">
+                <span><img src="12.jpg" alt="بابا غنوج" class="list-icon">بابا غنوج / مش</span>
+                <span>3 - 5 ريال</span>
+            </div>
+            <div class="list-item">
+                <span><img src="13.jpg" alt="بيض" class="list-icon">جبنة بيضاء / بيض مسلوق</span>
+                <span>3 / 1 ريال</span>
+            </div>
+            <div class="list-item">
+                <span><img src="14.jpg" alt="عدس" class="list-icon">عدس (كبير / صغير)</span>
+                <span>5 / 3 ريال</span>
+            </div>
+        </div>
+
+        <p class="source-text">مصدر اللحوم طازجة</p>
+    </main>
+
+    <footer>
+        <div class="footer-actions">
+            <a href="https://wa.me/966562492436" class="action-btn wa-btn" target="_blank">
+                <span>للاستلام من المطعم عبر واتساب</span>
+            </a>
+            
+            <a href="https://maps.google.com" class="action-btn map-btn" target="_blank">
+                <span>موقع المطعم على الخريطة</span>
+            </a>
+        </div>
+        
+        <div class="footer-info">
+            <p>للاستفسار: 0546576377 - 0562492436</p>
+            <p class="copyright">© 2026 مطعم أكل الزعيم. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+</body>
+</html>
